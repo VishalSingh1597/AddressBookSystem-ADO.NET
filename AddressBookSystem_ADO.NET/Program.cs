@@ -17,8 +17,8 @@ namespace AddressBookSystem_ADO.NET
             //addressBookManagement.DataBaseConnection(); //UC1
             //addressBookManagement.GetAllContact(); //UC2
             //AddNewContactDetails(); //UC3
-             Console.WriteLine(addressBookManagement.EditContactUsingName("442207", "Himanshu", "Kholiya") ? "Update Record successfully\n" : "Update failed"); //UC4
-
+            //Console.WriteLine(addressBookManagement.EditContactUsingName("442207", "Himanshu", "Kholiya") ? "Update Record successfully\n" : "Update failed"); //UC4
+            Console.WriteLine(addressBookManagement.DeleteContactUsingName("Himanshu", "Kholiya") ? "Delete Record successfully\n" : "Delete failed"); //UC5
             Console.ReadLine();
         }
         // UC3:- Ability to insert new Contacts to Address Book 
@@ -40,4 +40,5 @@ namespace AddressBookSystem_ADO.NET
             Console.WriteLine(repository.AddDataToTable(model) ? "Record inserted successfully\n" : "Record inserted Failed");
         }
     }
+
 }
