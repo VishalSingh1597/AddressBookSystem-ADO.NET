@@ -16,7 +16,8 @@ namespace AddressBookSystem_ADO.NET
 
             //addressBookManagement.DataBaseConnection(); //UC1
             //addressBookManagement.GetAllContact(); //UC2
-             AddNewContactDetails(); //UC3
+            //AddNewContactDetails(); //UC3
+             Console.WriteLine(addressBookManagement.EditContactUsingName("442207", "Himanshu", "Kholiya") ? "Update Record successfully\n" : "Update failed"); //UC4
 
             Console.ReadLine();
         }
