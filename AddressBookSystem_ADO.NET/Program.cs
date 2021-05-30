@@ -14,7 +14,8 @@ namespace AddressBookSystem_ADO.NET
 
             AddressBookManagement addressBookManagement = new AddressBookManagement();
 
-            addressBookManagement.DataBaseConnection(); //UC1
+            //addressBookManagement.DataBaseConnection(); //UC1
+            addressBookManagement.GetAllContact(); //UC2
             Console.ReadLine();
         }
     }
